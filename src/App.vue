@@ -1,29 +1,39 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import AppHeader from './components/AppHeader.vue'
+
+export default {
+  name: "App",
+  components: {
+    AppHeader,
+  },
+
+  data() {
+    return {
+
+      menu: [
+        {
+          text: "Shop Our Range Now",
+          url: "#",
+          current: "true",
+        },
+        {
+          text: "Book Your Appointment",
+          url: "#",
+          current: "false",
+        }
+      ]
+    }
+  }
+}
+
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <!-- Collego l'array "links" che è uguale al "menù" che sarebbe l'array in data (qui sopra) -->
+  <AppHeader :links="menu" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+<style lang="scss">
+@use './style/general.scss' as*;
+@use './style/partials/_variables' as*;
 </style>

@@ -1,13 +1,29 @@
-// Display Flex Center Between
+// Display Flex Center Around
 @mixin around() {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    align-self: center;
 }
 
-// Display Flex column
+// Display Flex Center Between
+@mixin between() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+
+// Display Flex Center Evenly
+@mixin evenly() {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+// Display Flex Column
 @mixin column() {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
 }

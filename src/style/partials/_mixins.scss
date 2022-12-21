@@ -32,3 +32,9 @@
 @mixin flex() {
     display: flex;
 }
+
+// Display Flex
+@mixin center() {
+    display: flex;
+    justify-content: center;
+}

@@ -1,6 +1,7 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppMainTop from './components/AppMainTop.vue'
+import AppMainServices from './components/AppMainServices.vue'
 import AppFooter from './components/AppFooter.vue'
 
 // Importo il file "store.js"
@@ -12,6 +13,7 @@ export default {
     AppHeader,
     AppMainTop,
     AppFooter,
+    AppMainServices,
   },
 
   data() {
@@ -41,6 +43,7 @@ export default {
   <AppHeader :links="menu" />
   <main>
     <AppMainTop />
+    <AppMainServices />
   </main>
   <AppFooter :links="menu" />
 </template>

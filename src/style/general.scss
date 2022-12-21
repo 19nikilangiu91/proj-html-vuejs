@@ -1,0 +1,23 @@
+@use './partials/_variables' as*;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li a {
+    color: $primary;
+    text-decoration: none;
+    margin: 30px;
+
+    &.active,
+    &:hover {
+        color: $primary;
+        border-bottom: 1px solid $primary;
+    }
+}
+
+a {
+    color: white;
+}

@@ -1,5 +1,6 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
+import AppMainTop from './components/AppMainTop.vue'
 import AppFooter from './components/AppFooter.vue'
 
 // Importo il file "store.js"
@@ -9,6 +10,7 @@ export default {
   name: "App",
   components: {
     AppHeader,
+    AppMainTop,
     AppFooter,
   },
 
@@ -37,7 +39,10 @@ export default {
 <template>
   <!-- Collego l'array "links" che è uguale al "menù" che sarebbe l'array in data (qui sopra) -->
   <AppHeader :links="menu" />
-  <AppFooter />
+  <main>
+    <AppMainTop />
+  </main>
+  <AppFooter :links="menu" />
 </template>
 
 <style lang="scss">

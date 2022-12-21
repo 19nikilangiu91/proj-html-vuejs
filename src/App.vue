@@ -19,19 +19,6 @@ export default {
   data() {
     return {
       store,
-
-      menu: [
-        {
-          text: "Shop Our Range Now",
-          url: "#",
-          current: "true",
-        },
-        {
-          text: "Book Your Appointment",
-          url: "#",
-          current: "false",
-        }
-      ]
     }
   }
 }
@@ -40,12 +27,12 @@ export default {
 
 <template>
   <!-- Collego l'array "links" che è uguale al "menù" che sarebbe l'array in data (qui sopra) -->
-  <AppHeader :links="menu" />
+  <AppHeader />
   <main>
     <AppMainTop />
     <AppMainServices />
   </main>
-  <AppFooter :links="menu" />
+  <AppFooter />
 </template>
 
 <style lang="scss">

@@ -25,7 +25,6 @@ export default {
             <FooterCharacter :info="element" />
         </div>
     </div>
-
 </template>
 
 <style lang="scss" scoped>

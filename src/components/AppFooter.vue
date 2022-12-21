@@ -1,6 +1,6 @@
 <script>
 
-// Importo il componente "SingleCharacter"
+// Importo il componente "FooterCharacter"
 import FooterCharacter from './FooterCharacter.vue'
 
 import { store } from '../store.js';
@@ -33,9 +33,8 @@ export default {
 @use 'src/style/partials/_mixins' as*;
 
 .container {
-    @include around;
+    @include center;
     background-color: $primary;
     width: 100%;
-    min-height: 500px;
 }
 </style>

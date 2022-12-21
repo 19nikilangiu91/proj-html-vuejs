@@ -1,11 +1,18 @@
 <script>
 
+import { store } from '../store.js';
+
 export default {
     name: "AppHeader",
+    data() {
+        return {
+            store,
+        }
+    },
     props: {
         // Creo una "props" richiamando "links" che collegherò nel template <AppHeader/>.
         links: Array,
-    }
+    },
 }
 </script>
 
@@ -31,16 +38,25 @@ export default {
                             {{ link.text }}
                         </a>
                     </li>
-                    <!-- <li><a class="menu__item" href="#">Home</a></li>
-                    <li><a class="menu__item" href="#">About</a></li>
-                    <li><a class="menu__item" href="#">Team</a></li>
-                    <li><a class="menu__item" href="#">Contact</a></li>
-                    <li><a class="menu__item" href="#">Twitter</a></li> -->
                 </ul>
             </div>
-
-
         </div>
+        <section>
+            <div class="containercontent">
+                <h1>{{ store.headerTitle }}</h1>
+                <hr>
+                <h3>{{ store.underTitle }}</h3>
+                <button>Learn More</button>
+            </div>
+            <div class="containerimage">
+                <img src="/public/images/avadabarbers_hero_focalmirror-400x550.png" alt="Image Header">
+            </div>
+            <!-- <div class="">
+                <h1>{{ store.headerTitle }}</h1>
+                <hr>
+                <h3>{{ store.underTitle }}</h3>
+            </div> -->
+        </section>
     </div>
 </template>
 
@@ -49,12 +65,10 @@ export default {
 @use 'src/style/partials/_mixins' as*;
 
 .container {
-    background-color: red;
     background-image: url(./public/images/avadabarbers-homepage-hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 500px;
 
     .image {
         @include around;
@@ -147,6 +161,49 @@ export default {
         //     background-color: #CFD8DC;
         // }
 
+    }
+
+    section {
+        width: 80%;
+        margin: 0 auto;
+        @include flex;
+
+        .containercontent {
+            width: 50%;
+            height: 500px;
+
+            h1 {
+                padding: 100px 0 0 150px;
+                color: $third;
+                font-size: 50px;
+            }
+
+            hr {
+                width: 15%;
+                height: 5px;
+                margin: 20px 0 0 150px;
+                background-color: $fourth;
+            }
+
+            h3 {
+                margin: 30px 0 0 150px;
+                color: $third;
+            }
+
+            button {
+                margin: 20px 0 0 150px;
+                padding: 10px 20px;
+                background-color: $primary;
+                border: 1px solid $fourth;
+                color: $fourth;
+            }
+        }
+
+        .containerimage {
+            padding-left: 120px;
+            width: 50%;
+            height: 500px;
+        }
     }
 }
 </style>

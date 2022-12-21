@@ -11,7 +11,23 @@ export default {
     <!-- Template di Single Card -->
     <div>
         <img :src="info.img" alt="image">
-        <button>{{ info.text }}</button>
+        <button>
+            {{ info.text }}
+        </button>
+        <ul>
+            <li>{{ info.textOne }}</li>
+            <li>{{ info.textTwo }}</li>
+            <li>{{ info.textThree }}</li>
+            <li>{{ info.textFour }}</li>
+            <li>{{ info.textFive }}</li>
+            <h2>{{ info.textSix }}</h2>
+        </ul>
+        <!-- <ul class="specialUl">
+            <li><font-awesome-icon icon="fa-brands fa-facebook-f" /></li>
+            <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
+            <li><font-awesome-icon icon="fa-brands fa-youtube" /></li>
+            <li><font-awesome-icon icon="fa-brands fa-instagram" /></li>
+        </ul> -->
     </div>
 </template>
 
@@ -23,20 +39,31 @@ div {
     @include column;
     margin-top: 50px;
     width: 100%;
+    // background-color: red;
 
     ul,
     h2 {
         margin-top: 10px;
         text-align: center;
         list-style-type: none;
+        color: $secondary;
     }
 
     button {
         margin: 30px;
-        padding: 10px 20px;
+        width: 200px;
+        height: 40px;
         background-color: $primary;
         border: 1px solid $fourth;
         color: $fourth;
+    }
+
+    .specialUl {
+        @include flex;
+
+        li {
+            margin: 10px
+        }
     }
 }
 </style>

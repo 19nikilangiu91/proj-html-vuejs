@@ -46,11 +46,12 @@ export default {
                 <h1>{{ store.headerTitle }}</h1>
                 <hr>
                 <h3>{{ store.underTitle }}</h3>
-                <button>Learn More</button>
+                <button>LEARN MORE</button>
             </div>
             <div class="containerimage">
                 <img src="/public/images/avadabarbers_hero_focalmirror-400x550.png" alt="Image Header">
             </div>
+            <!-- Da completare le immagini piccole al lato destro -->
             <!-- <div class="">
                 <h1>{{ store.headerTitle }}</h1>
                 <hr>

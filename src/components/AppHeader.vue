@@ -9,10 +9,6 @@ export default {
             store,
         }
     },
-    props: {
-        // Creo una "props" richiamando "links" che collegherò nel template <AppHeader/>.
-        links: Array,
-    },
 }
 </script>
 
@@ -33,8 +29,8 @@ export default {
 
                 <ul class="menu__box">
                     <!-- Creo un v-for per la nav richiamando l'array "links" -->
-                    <li v-for="(link, index) in links" :key="index">
-                        <a :class="{ active: links.current }" :href="link.url">
+                    <li v-for="(link, index) in store.menuNav" @click.prevent :key="index">
+                        <a :href="link.url">
                             {{ link.text }}
                         </a>
                     </li>
@@ -200,11 +196,12 @@ export default {
             }
         }
 
-        .containerimage {
-            padding-left: 120px;
-            width: 50%;
-            height: 500px;
-        }
+        // .containerimage {
+        //     padding-left: 120px;
+        //     width: 50%;
+        //     height: 500px;
+        // }
+
     }
 }
 </style>

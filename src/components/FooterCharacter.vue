@@ -11,9 +11,6 @@ export default {
     <!-- Template di Single Card -->
     <div>
         <img :src="info.img" alt="image">
-        <button>
-            {{ info.text }}
-        </button>
         <ul>
             <li>{{ info.textOne }}</li>
             <li>{{ info.textTwo }}</li>
@@ -64,6 +61,12 @@ div {
         li {
             margin: 10px
         }
+    }
+
+    .square {
+        width: 200px;
+        height: 100px;
+        background-color: red;
     }
 }
 </style>

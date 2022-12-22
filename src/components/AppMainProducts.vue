@@ -20,6 +20,7 @@ export default {
 </script>
 
 <template>
+    <svg></svg>
     <section>
         <h1>{{ store.titleProducts }}</h1>
         <h3>{{ store.titleMainProducts }}</h3>
@@ -36,6 +37,17 @@ export default {
 <style lang="scss" scoped>
 @use 'src/style/partials/_variables' as*;
 @use 'src/style/partials/_mixins' as*;
+
+svg {
+    background-image: url(./public/images/triangle.svg);
+    background-size: cover;
+    position: relative;
+    bottom: -6px;
+    width: 100%;
+    height: 146px;
+    transform: scalex(12);
+    filter: invert(92%);
+}
 
 section {
     @include column;

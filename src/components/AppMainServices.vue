@@ -20,6 +20,7 @@ export default {
 </script>
 
 <template>
+    <svg></svg>
     <section>
         <h1>{{ store.titleServices }}</h1>
         <h3>{{ store.titleMainServices }}</h3>
@@ -37,12 +38,21 @@ export default {
 @use 'src/style/partials/_variables' as*;
 @use 'src/style/partials/_mixins' as*;
 
+svg {
+    background-image: url(./public/images/triangle.svg);
+    background-size: cover;
+    position: relative;
+    bottom: 146px;
+    width: 100%;
+    height: 146px;
+    transform: scalex(12);
+}
+
 section {
     @include column;
     width: 100%;
 
     h1 {
-        margin-top: 50px;
         color: $fourth;
         font-size: 15px;
     }
@@ -61,7 +71,7 @@ section {
     }
 
     button {
-        margin: 30px;
+        margin: 30px 0 100px 0px;
         width: 200px;
         height: 40px;
         background-color: $third;

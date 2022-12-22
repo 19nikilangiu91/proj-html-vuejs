@@ -31,6 +31,12 @@ export default {
                 {{ link.text }}
             </a>
         </button>
+        <ul class="specialUl">
+            <li><font-awesome-icon icon="fa-brands fa-facebook-f" /></li>
+            <li><font-awesome-icon icon="fa-brands fa-twitter" /></li>
+            <li><font-awesome-icon icon="fa-brands fa-youtube" /></li>
+            <li><font-awesome-icon icon="fa-brands fa-instagram" /></li>
+        </ul>
     </div>
 </template>
 
@@ -51,6 +57,7 @@ export default {
     @include center;
 
     button {
+        position: relative;
         margin: 20px 140px;
         width: 200px;
         height: 40px;
@@ -61,6 +68,17 @@ export default {
 
     a {
         text-decoration: none;
+    }
+}
+
+.specialUl {
+    @include center;
+    position: absolute;
+    list-style-type: none;
+
+    li {
+        margin: 10px;
+        color: $third;
     }
 }
 </style>

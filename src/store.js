@@ -79,6 +79,87 @@ export const store = reactive({
         }
     ],
 
+    // Main Reviews Content
+    // Shawing Section
+
+    imageShawing: "images/shaving_butter-200x200.png",
+    titleShawing: "THIS MONTHS FEATURED PRODUCT",
+    titleMainShawing: "SHAVING BUTTER",
+    textShawing: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta aperiam et officiis expedita aut? Qui voluptate tempora inventore ad assumenda iste dicta quidem consectetur fugit, nemo voluptatem laboriosam id?",
+
+    buttonTitleShawing: "BUY NOW",
+
+    // Reviews Section
+
+    contentReviews: [
+        {
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta aperiam et officiis expedita aut? Qui voluptate tempora inventore ad assumenda iste dicta quidem consectetur fugit, nemo voluptatem laboriosam id?",
+            img: "images/avadabarbers-trimcut-gallery6-200x200.jpg",
+            name: "John Doe",
+        },
+        {
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta aperiam et officiis expedita aut? Qui voluptate tempora inventore ad assumenda iste dicta quidem consectetur fugit, nemo voluptatem laboriosam id?",
+            img: "images/avadabarbers-trimcut-gallery7-200x201.jpg",
+            name: "Pete Jones",
+        },
+        {
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta aperiam et officiis expedita aut? Qui voluptate tempora inventore ad assumenda iste dicta quidem consectetur fugit, nemo voluptatem laboriosam id?",
+            img: "images/avadabarbers-trimcut-gallery3-200x201.jpg",
+            name: "Mark Wilson",
+        }
+    ],
+
+    titleReviews: "WHAT PEOPLE SAY",
+    titleMainReviews: "Reviews",
+
+    contentProducts: [
+        {
+            img: "images/brush_dark-400x400.png",
+            title: "Brush",
+            text: "$15.00",
+        },
+        {
+            img: "images/scissors-400x400.png",
+            title: "Scissors",
+            text: "$85.00",
+        },
+        {
+            img: "images/hot_oil_dark-400x400.png",
+            title: "Hot Oil",
+            text: "$15.00",
+        },
+        {
+            img: "images/straight_razor_dark-400x400.png",
+            title: "Straight Razor",
+            text: "$30.00",
+        }
+    ],
+
+    // Main Blog Content
+
+    contentBlog: [
+        {
+            img: "images/avadabarbers-second-blog-320x202.jpg",
+            title: "AvadaBarbers Now Open",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta aperiam et officiis expedita aut? Qui voluptate tempora inventore ad assumenda iste dicta quidem consectetur fugit, nemo voluptatem laboriosam id?",
+
+        },
+        {
+            img: "images/avadabarbers-choosing-blog-320x202.jpg",
+            title: "Choosing the Right Barber",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta aperiam et officiis expedita aut? Qui voluptate tempora inventore ad assumenda iste dicta quidem consectetur fugit, nemo voluptatem laboriosam id?",
+        },
+        {
+            img: "images/avadabarbers-ourservice-blog-320x202.jpg",
+            title: "Quick Service Guide",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta aperiam et officiis expedita aut? Qui voluptate tempora inventore ad assumenda iste dicta quidem consectetur fugit, nemo voluptatem laboriosam id?",
+        }
+    ],
+
+    titleReviews: "TALES FROM THE BARBER SHOP",
+    titleMainReviews: "Recent Blog Posts",
+    buttonTitleBlog: "READ MORE FROM OUR BLOG",
+
 
     // Footer Content
     contentFooter: [

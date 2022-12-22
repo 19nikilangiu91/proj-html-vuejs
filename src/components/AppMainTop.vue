@@ -53,7 +53,7 @@ section {
         }
 
         button {
-            margin: 30px 0 50px;
+            margin: 30px 0 200px 0;
             padding: 10px 20px;
             background-color: $primary;
             border: 1px solid $fourth;

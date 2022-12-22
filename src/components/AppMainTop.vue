@@ -19,8 +19,8 @@ export default {
     <section>
         <div class="containercontent">
             <h1>{{ store.upMainTitle }}</h1>
-            <h3>{{ store.mainTitle }}</h3>
-            <button>MEET YOUR NEW BARBER</button>
+            <h3>{{ store.upMainTitle }}</h3>
+            <button>{{ store.upMainButton }}</button>
         </div>
     </section>
 </template>

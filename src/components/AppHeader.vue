@@ -39,10 +39,10 @@ export default {
         </div>
         <section>
             <div class="containercontent">
-                <h1>{{ store.headerTitle }}</h1>
+                <h1>{{ store.titleUpHeader }}</h1>
                 <hr>
-                <h3>{{ store.underTitle }}</h3>
-                <button>LEARN MORE</button>
+                <h3>{{ store.titleDownHeader }}</h3>
+                <button>{{ store.titleButtonHeader }}</button>
             </div>
             <div class="containerimage">
                 <img src="/public/images/avadabarbers_hero_focalmirror-400x550.png" alt="Image Header">
@@ -184,7 +184,7 @@ export default {
 
             h3 {
                 margin: 30px 0 0 150px;
-                color: $third;
+                color: $secondary;
             }
 
             button {

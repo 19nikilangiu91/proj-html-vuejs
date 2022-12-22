@@ -21,14 +21,14 @@ export default {
 
 <template>
     <section>
-        <h1>MENS GROMING</h1>
-        <h3>SERVICES</h3>
+        <h1>{{ store.titleServices }}</h1>
+        <h3>{{ store.titleMainServices }}</h3>
         <div class="container">
             <div v-for="element in store.contentServices" :key="element">
                 <ServicesCharacter :info="element" />
             </div>
         </div>
-        <button>SHOP OUR PRODUCT RANGE</button>
+        <button>{{ store.buttonTitleServices }}</button>
     </section>
 
 </template>

@@ -42,19 +42,5 @@ div {
         color: $fourth;
         margin-top: 20px;
     }
-
-    button {
-        width: 200px;
-        height: 40px;
-        background-color: $primary;
-        border: 1px solid $fourth;
-        color: $fourth;
-    }
-
-    .square {
-        width: 200px;
-        height: 100px;
-        background-color: red;
-    }
 }
 </style>

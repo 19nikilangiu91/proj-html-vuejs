@@ -9,10 +9,30 @@ export const store = reactive({
             text: "Shop Our Range Now",
             url: "#",
         },
+        // {
+        //     icon: "fa-brands fa-facebook-f",
+        //     text: "Facebook",
+        //     url: "#",
+        // },
+        // {
+        //     icon: "fa-brands fa-twitter",
+        //     text: "Twitter",
+        //     url: "#",
+        // },
+        // {
+        //     icon: "fa-brands fa-youtube",
+        //     text: "Youtube",
+        //     url: "#",
+        // },
+        // {
+        //     icon: "fa-brands fa-instagram",
+        //     text: "Instagram",
+        //     url: "#",
+        // },
         {
             text: "Book Your Appointment",
             url: "#",
-        }
+        },
     ],
 
     // Header Content

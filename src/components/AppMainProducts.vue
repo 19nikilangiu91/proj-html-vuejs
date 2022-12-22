@@ -64,7 +64,7 @@ section {
     }
 
     button {
-        margin: 30px;
+        margin-bottom: 100px;
         width: 200px;
         height: 40px;
         background-color: $primary;

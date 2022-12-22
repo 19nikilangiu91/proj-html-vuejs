@@ -3,6 +3,8 @@ import AppHeader from './components/AppHeader.vue'
 import AppMainTop from './components/AppMainTop.vue'
 import AppMainServices from './components/AppMainServices.vue'
 import AppMainProducts from './components/AppMainProducts.vue'
+import AppMainReviews from './components/AppMainReviews.vue'
+import AppMainBlog from './components/AppMainBlog.vue'
 import AppFooter from './components/AppFooter.vue'
 
 // Importo il file "store.js"
@@ -15,6 +17,8 @@ export default {
     AppMainTop,
     AppMainServices,
     AppMainProducts,
+    AppMainReviews,
+    AppMainBlog,
     AppFooter,
   },
 
@@ -34,6 +38,8 @@ export default {
     <AppMainTop />
     <AppMainServices />
     <AppMainProducts />
+    <AppMainReviews />
+    <AppMainBlog />
   </main>
   <AppFooter />
 </template>

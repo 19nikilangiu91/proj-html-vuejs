@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMainTop from './components/AppMainTop.vue'
 import AppMainServices from './components/AppMainServices.vue'
+import AppMainProducts from './components/AppMainProducts.vue'
 import AppFooter from './components/AppFooter.vue'
 
 // Importo il file "store.js"
@@ -12,8 +13,9 @@ export default {
   components: {
     AppHeader,
     AppMainTop,
-    AppFooter,
     AppMainServices,
+    AppMainProducts,
+    AppFooter,
   },
 
   data() {
@@ -31,6 +33,7 @@ export default {
   <main>
     <AppMainTop />
     <AppMainServices />
+    <AppMainProducts />
   </main>
   <AppFooter />
 </template>
